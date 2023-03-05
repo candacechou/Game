@@ -6,7 +6,6 @@ This is the second assignment of the course DD2380 Artificial Intelligence
 
 ```
 g++ *.cpp -Wall -o TTT
-
 ```
 
 ## Run
@@ -18,7 +17,6 @@ The Moves made are shown as unicode-art on std err if the parameter verbose is g
 ```
 mkfifo pipe
 ./TTT init verbose < pipe | ./TTT > pipe
-
 ```
 
 ### Play against self in two different terminals
@@ -26,14 +24,12 @@ mkfifo pipe
 ```
 mkfifo pipe1 pipe2
 ./TTT init verbose < pipe1 > pipe2
-
 ```
 
 #### Terminal 2:
 
 ```
 ./TTT verbose > pipe1 < pipe2
-
 ```
 
 ### Play against your friend (in the same terminal)
@@ -42,7 +38,6 @@ If you want two algorithms to play against each other, create two folders, folde
 ```
 mkfifo pipe
 ./folder1/TTT init verbose < pipe | ./folder2/TTT > pipe
-
 ```
 
 
